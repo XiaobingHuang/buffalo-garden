@@ -1,0 +1,82 @@
+/* Navigation Component Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #388e3c;
+  margin-right: 3rem;
+  letter-spacing: 1px;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-tab {
+  font-size: 1.1rem;
+  color: #444;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.nav-tab.active, .nav-tab:hover {
+  color: #388e3c;
+  border-bottom: 3px solid #388e3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .logo {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .nav-tabs {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-tab {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.75rem;
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+  }
+  
+  .nav-tabs {
+    gap: 1rem;
+  }
+  
+  .nav-tab {
+    font-size: 0.9rem;
+    padding: 0.25rem 0;
+  }
+} 
